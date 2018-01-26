@@ -9,7 +9,7 @@ import h5py
 import pandas as pd
 
 
-from rec_gae.data_utils import load_data, map_data, download_dataset
+from gcmc.data_utils import load_data, map_data, download_dataset
 
 
 def normalize_features(feat):

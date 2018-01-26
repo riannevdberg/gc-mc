@@ -1,7 +1,7 @@
 from __future__ import print_function
-from rec_gae.layers import *
+from gcmc.layers import *
 
-from rec_gae.metrics import softmax_accuracy, expected_rmse, softmax_cross_entropy
+from gcmc.metrics import softmax_accuracy, expected_rmse, softmax_cross_entropy
 
 
 flags = tf.app.flags

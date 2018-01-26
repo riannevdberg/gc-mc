@@ -13,19 +13,19 @@
 *~
 
 # Don't save data to repo
-rec_gae/data/ml_100k/*
-rec_gae/data/ml_1m/*
-rec_gae/data/ml_10m/*
-rec_gae/data/*.csv
+gcmc/data/ml_100k/*
+gcmc/data/ml_1m/*
+gcmc/data/ml_10m/*
+gcmc/data/*.csv
 
 # Don’t keep track of logs or saved models
-rec_gae/logs/*
-rec_gae/tmp/*
+gcmc/logs/*
+gcmc/tmp/*
 
 # Only save directories with readme files
-!rec_gae/data/ml_100k/README.md
-!rec_gae/data/ml_1m/README.md
-!rec_gae/data/ml_10m/README.md
+!gcmc/data/ml_100k/README.md
+!gcmc/data/ml_1m/README.md
+!gcmc/data/ml_10m/README.md
 
-!rec_gae/logs/README.md
-!rec_gae/tmp/README.md
+!gcmc/logs/README.md
+!gcmc/tmp/README.md

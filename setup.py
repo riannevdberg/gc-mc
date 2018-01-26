@@ -1,13 +1,13 @@
 from setuptools import setup
 from setuptools import find_packages
 
-setup(name='rec_gae',
+setup(name='gcmc',
       version='0.1',
       description='Graph Convolutional Matrix Completion',
       author='Rianne van den Berg, Thomas Kipf',
       author_email='riannevdberg@gmail.com',
       url='http://riannevdberg.github.io',
-      download_url='https://github.com/riannevdberg/rec_gae',
+      download_url='https://github.com/riannevdberg/gc-mc',
       license='MIT',
       install_requires=['numpy',
                         'tensorflow',
@@ -16,5 +16,5 @@ setup(name='rec_gae',
                         'cPickle',
                         'h5py'
                         ],
-      package_data={'rec_gae': ['README.md']},
+      package_data={'gcmc': ['README.md']},
       packages=find_packages())
