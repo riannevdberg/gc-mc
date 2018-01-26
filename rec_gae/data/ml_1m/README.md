@@ -1,0 +1,1 @@
+This folder is used to access the dataset movielens 1M. If the data is not present, it will be downloaded automatically.
