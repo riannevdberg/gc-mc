@@ -13,7 +13,6 @@ setup(name='gcmc',
                         'tensorflow',
                         'scipy',
                         'pandas',
-                        'cPickle',
                         'h5py'
                         ],
       package_data={'gcmc': ['README.md']},
