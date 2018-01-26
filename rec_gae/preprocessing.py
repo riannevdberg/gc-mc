@@ -9,7 +9,7 @@ import h5py
 import pandas as pd
 
 
-from rec_gae.data_utils import load_data, map_data
+from rec_gae.data_utils import load_data, map_data, download_dataset
 
 
 def normalize_features(feat):
@@ -331,12 +331,20 @@ def load_official_trainvaltest_split(dataset, testing=False):
     """
 
     sep = '\t'
-    filename_train = 'data/' + dataset + '/u1.base'
-    filename_test = 'data/' + dataset + '/u1.test'
+
+    # Check if files exist and download otherwise
+    files = ['/u1.base', '/u1.test', '/u.item', '/u.user']
+    fname = dataset
+    data_dir = 'data/' + fname
+
+    download_dataset(fname, files, data_dir)
 
     dtypes = {
         'u_nodes': np.int32, 'v_nodes': np.int32,
         'ratings': np.float32, 'timestamp': np.float64}
+
+    filename_train = 'data/' + dataset + '/u1.base'
+    filename_test = 'data/' + dataset + '/u1.test'
 
     data_train = pd.read_csv(
         filename_train, sep=sep, header=None,
