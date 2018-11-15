@@ -10,7 +10,7 @@ Rianne van den Berg, Thomas N. Kipf, Max Welling, [Graph Convolutional Matrix Co
 
 ## Requirements
 
-
+  * Python 2.7
   * TensorFlow (1.4)
   * pandas
 
